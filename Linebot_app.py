@@ -45,8 +45,8 @@ from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 app = Flask(__name__)
 
-handler = WebhookHandler('8b2c07fb8258c98f91b2ee7296feb286')
-line_bot_api = LineBotApi('hqZx62GWw3rpLToss940RJ0RV8dcferdAInkAMX3zt5q3WRaNVrIfMtLzv1ulj8NYX/j5Hs71ZH7lgVwERCQyUuRLIyqUfWdYkQCCzHMjQ+17hiKxml4koR/4PjgfOy9h9owIlj6EVWP64xFPIjVHQdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('YOUR_CHANNEL_SECRET')
+line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
 
 # 收Line的訊息
 @app.route('/callback', methods=['POST'])
